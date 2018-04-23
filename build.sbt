@@ -2,7 +2,7 @@ name := """shapeless-playbook"""
 
 version := "1.0"
 
-scalaVersion := "2.12.0"
+scalaVersion := "2.11.12"
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
@@ -19,17 +19,17 @@ initialCommands in (console) := """ammonite.Main().run()"""
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.1" % "test",
-  "com.chuusai" %% "shapeless" % "2.3.2",
+  "com.chuusai" %% "shapeless" % "2.3.3",
   scalazCore, scalazConcurrent,
   "com.lihaoyi" % "ammonite" % "COMMIT-057440b" cross CrossVersion.full //0.8.0
 )
 
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats-free" % "0.8.1", //1
-  "co.fs2" %% "fs2-cats" % "0.2.0",
-  "com.github.mpilquist" %%  "simulacrum"  % "0.10.0",
-  "io.monix"          %% "monix"            % "2.1.0",
-  "io.monix"          %%  "monix-cats"      % "2.1.0",
+  "org.typelevel" %% "cats-free" % "1.1.0", //1
+  "co.fs2" %% "fs2-cats" % "0.5.0",
+  "com.github.mpilquist" %%  "simulacrum"  % "0.12.0",
+  "io.monix"          %% "monix"            % "2.3.3",
+  "io.monix"          %%  "monix-cats"      % "2.3.3",
   "com.github.thangiee" %% "freasy-monad" % "0.5.0" // requires cats version 0.8.1+
 )
 
